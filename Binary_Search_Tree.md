@@ -4,4 +4,4 @@
 
 Root 7 olsun. Elemanlar sırayla eklendiğinde oluşan binary Search Tree şekildeki gibi olmaktadır.
 
-![image-2022020331115568 PM](/Users/evrenustun/Library/Application Support/typora-user-images/image-2022020331115568 PM.png)
+![binarySearchTree](/Users/evrenustun/Documents/GitHub/Patika-Kurslari/binarySearchTree.jpg)
