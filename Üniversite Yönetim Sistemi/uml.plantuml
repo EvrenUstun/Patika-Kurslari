@@ -1,0 +1,49 @@
+@startuml Üniversite Yönetim Sistemi
+
+class University{
+
+}
+
+class Department{
+    
+}
+class Classroom{
+    
+}
+
+class WorkOffice{
+    
+}
+
+class Office{
+    
+}
+
+class DepartmentOffice{
+    
+}
+
+class Employee{
+    
+}
+
+class Professor{
+    
+}
+
+class Officer{
+    
+}
+
+University "1" *-- "*" Classroom
+University "1" *-- "*" WorkOffice
+University "1" *-- "*"  Department 
+Department "1" o-- "*" DepartmentOffice
+University "1" *-- "*" Employee
+Employee <-- Professor
+Employee <-- Officer
+
+Professor  "1" o-- "1" Office
+Officer  "1" o-- "1" Office
+
+@enduml
