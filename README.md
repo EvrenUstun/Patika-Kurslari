@@ -1,3 +1,3 @@
 # Patika Kursları
 
-Patika.dev sitesinde bulunan ödev ve projeleri içerir.
+Bu repository Patika.dev sitesinde bulunan ödev ve projeleri içerir.
