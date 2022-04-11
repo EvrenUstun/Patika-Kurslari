@@ -1,0 +1,90 @@
+@startuml Uçuş Yönetim Sistemi
+
+class AirlineCompany{
+    - id : int
+    - name : String
+}
+
+class AirlineCompany1{
+    
+}
+class AirlineCompany2{
+    
+}
+
+class Flight{
+    - id : int
+    - departureAirportId: int
+    - landingAirportId : int
+    - pilotId : int
+    - coPilotId : int
+    - departureTime : Date
+    - landingTime : Date
+}
+
+class Pilot{
+    - id : int
+    - expLevel: double
+}
+
+class Airplane{
+    - id : int
+    + airplaneStatus() : boolean
+    + needPilot() : int
+}
+
+class FirstPilot{
+    
+}
+
+class CoPilot{
+    
+}
+
+class Airport{
+    - id : int
+    - name : String
+}
+
+class Airplane1{
+    
+}
+
+class Airplane2{
+    
+}
+
+class Airplane3{
+    
+}
+
+class Airport1{
+    
+}
+
+class Airport2{
+    
+}
+
+AirlineCompany <-- AirlineCompany1
+AirlineCompany <-- AirlineCompany2
+AirlineCompany "1" o-- "*" Pilot
+AirlineCompany "1" o-- "*"  Flight 
+AirlineCompany "1" o-- "*" Airplane
+Pilot  -- Airplane : Use
+Pilot <-- FirstPilot
+Pilot <-- CoPilot
+Flight "1" o-- "1" CoPilot
+Flight "1" o-- "1" Pilot
+Flight "1" -- "2" Airport
+
+Airport <-- Airport1
+Airport <-- Airport2
+
+Airplane <-- Airplane1
+Airplane <-- Airplane2
+Airplane <-- Airplane3
+
+
+
+@enduml
