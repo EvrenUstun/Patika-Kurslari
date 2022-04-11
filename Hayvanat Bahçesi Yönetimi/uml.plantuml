@@ -1,0 +1,63 @@
+@startuml Hayvanat Bahçesi Yönetim Sistemi
+
+class Hayvanlar{
++ turAdi : String
++ agirligi : int
++ yas : int
++ getDosage(): double
++ getFeedSchedule():int
+}
+
+class Atlar{
+    
+}
+
+class Kedigiller{
+    
+}
+
+class Kemirgenler{
+    
+}
+
+class At{
+    
+}
+
+class Eşek{
+    
+}
+
+class Zebra{
+    
+}
+
+class Kaplan{
+    
+}
+
+class Aslan{
+    
+}
+
+class Sıçan{
+    
+}
+
+class Kunduz{
+    
+}
+
+Hayvanlar <-- Atlar
+Hayvanlar <-- Kedigiller
+Hayvanlar <-- Kemirgenler
+Atlar <-- At
+Atlar <-- Eşek
+Atlar <-- Zebra
+Kedigiller <-- Kaplan
+Kedigiller <-- Aslan
+Kemirgenler <-- Sıçan
+Kemirgenler <-- Kunduz
+
+
+@enduml
