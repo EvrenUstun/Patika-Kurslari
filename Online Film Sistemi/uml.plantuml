@@ -1,0 +1,53 @@
+@startuml Online Film Sistemi
+
+class User {
+    - name : String
+    - surname : String
+    - id : int
+    - email : String
+    - credit : int
+
+    + buyCredit()
+    + buyProduct()
+
+}
+
+class Subscribe{
+    + rentProduct() : void
+}
+
+class NotSubscribe{
+}
+
+class Film{
+}
+
+class Order{
+    - product : Product
+    - user : User
+    - orderId : int
+
+    + addProduct(Product)
+    + deleteProduct(Product)
+    + demandProduct() 
+}
+class Product{
+    - name : String
+    - id : int
+    - amount : int
+
+    + listProduct() : void
+    + sortProduct() : void
+}
+
+
+User <-- Subscribe
+User <-- NotSubscribe
+Product <-- Film
+
+User "1" *-- "*" Order
+
+Order o-- Product
+
+
+@enduml
